@@ -1,5 +1,5 @@
-FROM eclipse-temurin:21-jdk
+FROM openjdk:27-jdk-slim
 WORKDIR /app
-COPY samplename.java .
+COPY . .
 RUN javac samplename.java
 CMD ["java", "samplename"]
